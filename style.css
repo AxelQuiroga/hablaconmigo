@@ -1,0 +1,1264 @@
+* {
+  box-sizing: border-box; /* evita que el padding sume al ancho total */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* elimina el scroll lateral */
+  width: 100%;
+}
+.HeroSection{
+    /* HeroSection */
+
+max-width: 1440px;
+width: 100%;
+
+
+
+background: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 50%, #FFF7ED 100%);
+border-radius: 0px;
+
+}
+.header-contenedor{
+    /* Navigation */
+
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 118.5px;
+gap: 163.92px;
+
+position: relative;
+max-width: 1440px;
+width: 100%;
+
+top: 14px;
+
+border-radius: 0px;
+
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 32px; /* copia del gap que Figma tenía */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  height: 59px;          /* opcional, solo si lo necesitás */
+  max-width: 691px;      /* mejor que width fijo */
+}
+
+.menu-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;   /* Figma decía 24px */
+  line-height: 32px; /* igual que Figma */
+  color: #262626;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+
+  font-size: 20.1196px;
+  color: #fff;
+  background: #FC5922;
+  padding:  13.1686px 26.3371px;/* aproximado al Figma */
+  border-radius: 13px;
+  text-decoration: none;
+}
+.hero-texto {
+  width: 100%;
+  max-width: 944px;      /* controla el ancho del texto */
+  margin: 100px auto 0;   /* SEPARA del menú y centra todo */
+  text-align: center;
+  padding: 0 20px;       /* evita pegarse a los bordes en mobile */
+}
+.HeroSection h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 60px;
+  color: #1F1F1F;
+  margin-bottom: 20px;   /* espacio con el párrafo */
+}
+
+.text-desktop-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #595959;
+
+  max-width: 944px;
+  width: 100%;
+  margin: 0 auto;       /* centra el párrafo */
+}
+
+.container {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra el texto */
+
+  padding: 24px 28px;
+
+  width: 100%;
+  max-width: 939px; /* el valor de Figma, pero ahora responsivo */
+  margin: 40px auto;
+
+  background: #FFEEE9;
+  border-left: 4px solid #FC5922;
+  border-radius: 0px 16px 16px 0px;
+}
+.question {
+font-weight: 700;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 24px;
+line-height: 24px;
+/* o 133% */
+text-align: center;
+}
+.container p { 
+    /* estilos aquí */ 
+    /* Ya sea con tu familia, en el trabajo, en la escuel */
+/* Ya sea con tu familia, en el trabajo, en la escuel */
+
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+/* o 133% */
+text-align: center;
+color: #262626;
+}
+.button-group {
+  display: flex;
+
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 21.92px;
+width: 100%;
+position: relative;
+max-width: 986.5px;
+height: 71.25px;
+left: calc(50% - 986.5px/2 + 0.25px);
+
+
+border-radius: 0px;
+}
+
+.primary-button{
+  /* Button */
+  display: flex;
+  align-items: center; /* centra icono y texto verticalmente */
+  justify-content: center;
+  gap: 12px; /* espacio entre icono y texto */
+width: 345.54px;
+height: 68.62px;
+ padding-left: 22.88px; /* coloca el icono a 22.88px del borde izquierdo, como Figma */
+  padding-right: 24px;
+background: #F54900;
+/* shadow-4 */
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+border-radius: 11.4375px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+.primary-button img{
+  /* Icon */
+display: block;
+
+width: 22.88px;
+height: 22.88px;
+
+
+border-radius: 0px;
+
+  flex: 0 0 auto;
+}
+.secondary-button img{
+width: 21.92px;
+height: 21.92px;
+
+  flex: 0 0 auto;
+
+}
+.secondary-button{
+  /* Button */
+  display: flex;
+  align-items: center; /* centra icono y texto verticalmente */
+  justify-content: center;
+  gap: 12px; /* espacio entre icono y texto */
+box-sizing: border-box;
+  padding-left: 24.66px; /* posiciona el icono */
+  padding-right: 16px;
+width: 192.85px;
+height: 71.25px;
+
+background: #FFFFFF;
+border: 2.74029px solid #FC5922;
+/* shadow-4 */
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+border-radius: 10.9611px;
+
+
+
+}
+
+.buton-text1{
+  /* Descargá Gratis Ahora */
+text-align: center;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 24px;
+/* idéntico a la altura del cuadro o 133% */
+color: #FFFFFF;
+
+}
+.buton-text2{
+  /* Ver Demo */
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+color: #FC5922;
+}
+
+.text-pros {
+  display: flex;
+  flex-direction: row; /* uno al lado del otro */
+  justify-content: center; /* centrados */
+  align-items: center;
+  gap: 20px; /* separación entre cada ítem */
+  margin-top: 30px; /* separación de lo anterior */
+}
+
+.text-pros p {
+/* 100% Gratis */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* idéntico a la altura del cuadro o 122% */
+text-align: center;
+color: #4A5565;
+
+}
+
+.text-pros img {
+  width: 16px;
+  height: 12px;
+}
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+/* HeroSection */
+width: 100%;
+max-width: 1300px;
+height: 62.11px;
+
+border-radius: 0px;
+
+/* Dentro del diseño automático */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.store-btn{
+  /* Container */
+
+/* Diseño automático */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 21.9223px;
+  gap: 10.96px;
+
+  width: 156.58px;
+  height: 62.11px;
+
+  background: #262626;
+  border-radius: 13.7014px;
+
+  text-decoration: none;
+  color: white;
+
+  transition: transform .2s ease;
+}
+.store-btn2{
+  /* Container */
+
+/* Diseño automático */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 21.9223px;
+  gap: 10.96px;
+
+  width: 169.04141235351562px;
+  height: 62.11px;
+
+  background: #262626;
+  border-radius: 13.7014px;
+
+  text-decoration: none;
+  color: white;
+
+  transition: transform .2s ease;
+}
+.store-btn p {
+  /* Descarga en */
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7014px;
+line-height: 18px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+color: #FFFFFF;
+  flex-direction: column; /* fuerza a que el span vaya abajo */
+  display: flex;
+    margin: 0;
+  padding: 0;
+    white-space: normal;   /* PERMITE saltos de línea */
+}
+.store-btn span{
+  /* App Store */
+  display: block;        /* OBLIGA a estar abajo sí o sí */
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16.4417px;
+line-height: 22px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+  margin-top: 2px;        /* ajuste fino */
+color: #FFFFFF;
+}
+.store-btn2 p {
+  /* Descarga en */
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7014px;
+line-height: 18px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+color: #FFFFFF;
+  flex-direction: column; /* fuerza a que el span vaya abajo */
+  display: flex;
+    margin: 0;
+  padding: 0;
+    white-space: normal;   /* PERMITE saltos de línea */
+}
+.store-btn2 span{
+  /* App Store */
+  display: block;        /* OBLIGA a estar abajo sí o sí */
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16.4417px;
+line-height: 22px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+  margin-top: 2px;        /* ajuste fino */
+color: #FFFFFF;
+}
+.app-icon {
+  height: 20.55474090576172px; /* ajustalo a gusto */
+  width: 17.317556381225586px;
+}
+.play-icon{
+  width: 20.266700744628906px;
+  height: 22.493183135986328px;
+}
+
+.glow-container {
+  position: relative;
+  max-width: 1300px;
+  width: 100%;
+  margin-top: 120px; /* AJUSTALO según lo que necesites */
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 150px; /* importante */
+}
+
+/* Glow borroso naranja */
+.glow-bg {
+  position: absolute;
+  width: 1300px;
+  height: 644px;
+  background: #FC5922;
+  opacity: 0.2;
+  filter: blur(70px);
+  border-radius: 9999px;
+  top: 50%;                  /* centro vertical */
+  left: 50%;                 /* centro horizontal */
+    transform: translate(-50%, -50%);
+  z-index: 0; /* queda al fondo */
+}
+
+/* Imagen principal */
+.hero-img {
+  width: 791px; /* según tu figma */
+  height: 644px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 14px; /* centra la imagen respecto al glow – AJUSTALO */
+}
+.hero-img-small {
+position: absolute;
+  width: 100%;
+  max-width: 262.1166076660156px;     /* ajustalo */
+  z-index: 3;
+  right: 300px;      /* separa del borde derecho */
+  bottom: 210px;     /* separa del borde inferior de la imagen grande */
+}
+.Features {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 0px 0px;
+gap: 10.72px;
+position: relative;
+max-width: 1440px;
+width: 100%;
+background: #FFFFFF;
+border-radius: 0px;
+}
+.Features h1{
+  /* Todo lo que necesitás para comunicarte */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 72px;
+/* o 112% */
+text-align: center;
+color: #262626;
+
+}
+.Features p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+text-align: center;
+color: #4A5565;
+
+}
+
+.cards-features{
+  /* Container */
+
+box-sizing: border-box;
+width: 100%;
+max-width: 1240px;
+border-radius: 0px;
+ display: flex;
+  flex-wrap: wrap;      /* Permite que bajen a la siguiente fila */
+  gap: 10px;            /* Espacio entre tarjetas */
+  justify-content: center; /* Centra las tarjetas en ambas filas */
+}
+.feature-card{
+    width: 600px;
+  height: 305px;
+  padding: 20px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.feature-card h3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+color: #262626;
+
+}
+.feature-card p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+text-align: center;
+
+color: #595959;
+
+}
+.container-ft{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 40px;
+  padding: 71px;
+  max-width: 1125px;
+  width: 100%;
+  background: linear-gradient(135deg, #FFEDD4 0%, #FFF7ED 100%);
+  border-radius: 35.519px;
+}
+
+.cont-ft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.cont-ft h3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 44px;
+/* idéntico a la altura del cuadro o 110% */
+text-align: center;
+color: #FC5922;
+margin: 0;
+
+}
+
+.cont-ft p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+text-align: center;
+color: #595959;
+margin: 0;
+}
+
+.HowItWorks{
+  /* HowItWorks */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 118.5px 0;
+  gap: 64px;
+
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  background: #FFFFFF;
+}
+.HowItWorks h1{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 70px;
+/* o 109% */
+text-align: center;
+color: #262626;
+}
+
+.HowItWorks p{
+  /* Elegí la que mejor se adapte a cada situación. Una */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+text-align: center;
+color: #4A5565;
+
+
+}
+.cards-how{
+  /* Container */
+
+/* Container */
+
+gap: 32px;
+  
+max-width: 1203px;
+width: 100%;
+margin: auto;
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+border-radius: 0px;
+padding: 60px;
+/* Dentro del diseño automático */
+
+}
+.how-card{
+/* Card */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+
+padding: 34px 39px;
+gap: 28px;
+width: 100%;
+max-width: 379px;
+background: #FFFFFF;
+border: 2px solid #F0F0F0;
+border-radius: 14px;
+
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+}
+.how-card h1{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+color: #262626;
+}
+.how-card p {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+text-align: center;
+
+color: #595959;
+
+
+}
+.mini-how{
+   align-self: flex-start; /* <- clave: sitúa la caja al borde izquierdo del contenido de la card */
+ box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 8px 16px 0 19px;
+  width: 100%;
+  max-width: 301px;
+  height: 56px;
+  text-align: left;
+  background: #FFEEE9;
+  border-left: 3px solid #FC5922;
+  border-radius: 0 10px 10px 0;
+
+  /* Extra realista para mantener proporciones en tarjetas */
+  margin-top: auto; /* ✨ ESTA ES LA CLAVE */
+  
+}
+.mini-how p{
+  /* ✓ Gratis en Play Store y App Store */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* o 122% */
+color: #973514;
+text-align: left;
+  margin: 0; /* opcional: evita espacios raros */
+}
+.how-card > *:not(.mini-how) {
+  align-self: center; /* centra solo lo principal */
+}
+.BeforeAfter{
+/* BeforeAfter */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 96px 118.5px 0px;
+max-width: 1440px;
+width: 100%;
+background: #F5F5F5;
+border-radius: 0px;
+
+}
+
+.BeforeAfter h1{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 60px;
+/* idéntico a la altura del cuadro o 94% */
+text-align: center;
+color: #0A0A0A;
+}
+.BeforeAfter p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+color: #454545;
+}
+.cards-before{ /*contenedor de tarjetas*/
+  /* Container */
+/* Diseño automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+padding: 0px;
+gap: 40px;
+max-width: 1203px;
+width: 100%;
+border-radius: 0px;
+
+}
+.before-card{ /*tarjetas*/
+  /* Container */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30px;
+max-width: 551px;
+width: 100%;
+background: #FFFFFF;
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+border-radius: 24px;
+
+}
+
+.container-img{ /*img*/
+  /* Container */
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;  /* para que la imagen y el texto queden centrados verticalmente */
+gap: 12px;            /* espacio entre imagen y texto */
+padding: 24px 32px 2px;
+max-width: 551px;
+height: 98px;
+width: 100%;
+background: #FECCBA;
+border-bottom: 2px solid #FFEEE9;
+border-radius: 0px;
+}
+
+.container-img2{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;  /* para que la imagen y el texto queden centrados verticalmente */
+gap: 12px;            /* espacio entre imagen y texto */
+padding: 24px 32px 2px;
+max-width: 568px;
+width: 100%;
+height: 98px;
+background: #E9F9E9;
+border-bottom: 2px solid #BAECBA;
+border-radius: 0px;
+}
+.icon-text {
+  display: flex;
+  flex-direction: column; /*  filas una debajo de otra */
+  gap: 12px; /* separación entre cada fila */
+  width: 100%;
+  padding: 0 32px 32px; /* opcional, queda piolitaa */
+}
+
+.icon-text .row {
+  display: flex; /*  icono + texto en horizontal */
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.icon-text img {
+  width: 24px;
+  height: auto;
+}
+
+.icon-text p {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 22px;
+  color: #262626;
+  margin: 0;
+  text-align: left; /* por si acaso */
+}
+
+.container-before{
+
+  /* Container */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 48px 48px 0px;
+position: relative;
+margin: 48px;
+max-width: 1203px;
+width: 100%;
+background: #FFEEE9;
+border-radius: 24px;
+
+
+}
+
+.container-before h1{
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 36px;
+/* idéntico a la altura del cuadro o 112% */
+text-align: center;
+color: #262626;
+
+}
+.container-before p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+text-align: center;
+color: #262626;
+}
+
+.text-cnt-bef{
+    display: flex;
+  flex-direction: row; /* uno al lado del otro */
+  justify-content: center; /* centrados */
+  align-items: center;
+  gap: 10px; /* separación entre cada ítem */
+}
+
+.UseCases{
+  /* contenedor UseCases */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 96px 102.5px 0px;
+position: relative;
+max-width: 1440px;
+width: 100%;
+margin: 0 auto;
+background: #F5F5F5;
+border-radius: 0px;
+}
+.UseCases h1{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 70px;
+/* idéntico a la altura del cuadro o 109% */
+text-align: center;
+color: #262626;
+}
+.subtext {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+
+color: #595959;
+}
+.cards-cases{
+  /* Container de tarjetas */
+max-width: 1203px;
+width: 100%;
+border-radius: 0px;
+margin: auto;
+display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
+border-radius: 0px;
+gap: 20px;
+padding: 10px;
+
+}
+.cases-card{
+/* Card */
+box-sizing: border-box;
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px 0px 0px 24px;
+gap: 12px;
+position: relative;
+max-width: 589.5px;
+width: 100%;
+background: #FFFFFF;
+border: 2px solid #F5F5F5;
+border-radius: 14px;
+}
+.cnt-card{
+/* Container */
+box-sizing: border-box;
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 6px 12px;
+max-width: 356px;
+width: 100%;
+height: auto;
+background: #F5F5F5;
+border-left: 3px solid #F0F0F0;
+border-radius: 10px;
+
+}
+.cnt-card p{
+font-family: 'Open Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+/* idéntico a la altura del cuadro o 125% */
+color: #595959;
+}
+.text-img{
+display: flex;
+flex-direction: row;
+align-items: center;  /* para que la imagen y el texto queden centrados verticalmente */
+gap: 12px;            /* espacio entre imagen y texto */
+
+}
+.text-block{
+  display: flex;
+  flex-direction: column; /* texto uno abajo del otro */
+  justify-content: center;
+}
+.text-block h3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+color: #262626;
+}
+.text-block p{
+  margin-top: -5px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* idéntico a la altura del cuadro o 125% */
+color: #8C8C8C;
+}
+
+.cases-card > p {
+  margin-top: -6px;   /* 🔥 sube el texto con el check */
+}
+
+.usetext{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: left;
+color: #262626;
+  align-self: flex-start; /* ignora el centrado del contenedor */
+}
+.ImpactStats{
+  /* ImpactStats */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 96px 118.5px 0px;
+position: relative;
+max-width: 1440px;
+width: 100%;
+background: #E3501F;
+border-radius: 0px;
+gap: 8px;
+margin-bottom: 40px;
+}
+.ImpactStats h1{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 52px;
+/* idéntico a la altura del cuadro o 108% */
+text-align: center;
+align-self: center;
+color: #FFFFFF;
+}
+.ImpactStats p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* idéntico a la altura del cuadro o 133% */
+text-align: center;
+align-self: center;
+color: #FFEDD4;
+}
+
+.impact-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1203px;
+  margin: 0 auto;
+}
+
+.card-impact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+padding:0px;
+max-width: 276.75px;
+width: 100%;
+border-radius: 0px;
+}
+
+
+.card-impact h3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 56px;
+text-align: center;
+color: #FFFFFF;
+  margin-bottom: -4px; /* subimos el subtítulo */
+}
+
+/* Subtítulo */
+.card-impact .subtitle{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+text-align: center;
+color: #FFEDD4;
+  margin-bottom: -2px; /*  acercamos la descripción */
+
+}
+
+/* Descripción */
+.card-impact .description{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+/* o 122% */
+text-align: center;
+color: #FFD6A7;
+}
+
+.cnt-impact{
+  /* Container */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 49px 49px 1px;
+
+max-width: 1203px;
+width: 100%;
+margin: 32px;
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+border-radius: 24px;
+}
+
+.cnt-impact h3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 36px;
+text-align: center;
+color: #262626;
+
+}
+.cnt-impact p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #FC5922;
+
+}
+
+.Testimonials{
+  /* Testimonials */
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 16px;
+gap: 64px;
+
+
+width: 100%;
+background: #FFFFFF;
+border-radius: 0px;
+
+}
+
+.Testimonials h1{
+top: -5px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 70px;
+/* idéntico a la altura del cuadro o 109% */
+text-align: center;
+
+color: #262626;
+
+
+}
+.Testimonials p{
+top: -3px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #595959;
+
+}
+
+.cards-test{
+max-width: 1268px;
+width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin: 0 auto;
+}
+.test-card{
+  /* Card */
+
+box-sizing: border-box;
+
+/* Diseño automático */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px 0px 32px 32px;
+gap: 40px;
+
+max-width: 622px;
+width: 100%;
+
+background: #FFFFFF;
+border: 1px solid #F5F5F5;
+border-radius: 14px;
+
+}
+.test-card p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* o 133% */
+color: #595959;
+}
+.letra-cnt{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+width: 64px;
+height: 64px;
+background: #FC5922;
+border-radius: 3.35544e+07px;
+}
+.bloque{
+  display: flex;
+flex-direction: row;
+align-items: center;  /* para que la imagen y el texto queden centrados verticalmente */
+gap: 12px;            /* espacio entre imagen y texto */
+
+}
+.text-block2{
+  display: flex;
+  flex-direction: column; /* texto uno abajo del otro */
+  justify-content: center;
+}
+.text-block2 h3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* idéntico a la altura del cuadro o 122% */
+color: #262626;
+}
+.text-block2 p{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #8C8C8C;
+}
